@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Check -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Check">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ArchitecturalModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IntegratedModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#MepModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RevitModelCheckerTool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StructuralModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Coordonate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Coordonate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimCoordinator"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimManager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IntegratedModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Beam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistArchitecture"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistMep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistStructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ClashReport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Column"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Covering"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Door"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Footing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Member"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Pile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Plate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Railing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Ramp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RampFlight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Roof"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ShadingDevice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Slab"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Stair"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StairFlight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Wall"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Windowset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Detect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Detect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimCoordinator"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimManager"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#DynamoClashDetectionTool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashIntegratedModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashMepModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashStructuralModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashesArchitecturalModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#NavisworksClashDetectionTool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashIntegratedModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashMepModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashStructuralModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashesArchitecturalModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Filter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Filter">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ClashReport"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Meeting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Participate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Participate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimCoordinator"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimManager"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Contractor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Engineer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Meeting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Write -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Write">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimCoordinator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ClashReport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#model -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#model">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ArchitecturalModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistArchitecture"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistMep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistStructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#MepModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StructuralModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ArchitecturalModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ArchitecturalModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Beam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Beam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimCoordinator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimCoordinator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSoftware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSoftware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistArchitecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistArchitecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistMep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistMep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSpecialistStructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ClashReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ClashReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Column -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Column">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Contractor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Contractor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Covering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Covering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Door -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Door">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Dynamo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Dynamo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#DynamoClashDetectionTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#DynamoClashDetectionTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Dynamo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Engineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Footing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Footing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IntegratedModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IntegratedModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashIntegratedModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashIntegratedModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IntegratedModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashMepModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashMepModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#MepModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashStructuralModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashStructuralModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StructuralModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashesArchitecturalModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IrrelevantClashesArchitecturalModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ArchitecturalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Meeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Meeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Member -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Member">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#MepModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#MepModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Navisworks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Navisworks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#NavisworksClashDetectionTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#NavisworksClashDetectionTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Navisworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#People">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Pile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Pile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Plate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Plate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Railing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Railing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Ramp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Ramp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RampFlight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RampFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashIntegratedModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashIntegratedModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#IntegratedModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashMepModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashMepModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#MepModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashStructuralModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashStructuralModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StructuralModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashesArchitecturalModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RelevantClashesArchitecturalModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ArchitecturalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Revit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Revit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BimSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RevitModelCheckerTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#RevitModelCheckerTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Revit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Roof -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Roof">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ShadingDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#ShadingDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Slab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Slab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Stair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Stair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StairFlight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StairFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StructuralModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#StructuralModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Wall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Wall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Windowset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#Windowset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aiss-pc/ontologies/2022/9/untitled-ontology-21#BuildingElement"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
